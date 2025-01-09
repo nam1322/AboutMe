@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">  <!--lang attribute specifies the language of the web page-->
+    <head>
+      <meta charset="UTF-8"> <!--encodes all characters and displays them correctly-->
+      <meta name="viewport" content="width=device-width,initial scale=1.0"> <!--adjusts the web page according to screen size-->
+      <title>My First Web Page</title>
+      <link rel="stylesheet" href="styles.css"> <!--specifies the relationship between html code and external code-->
+      <style>
+          h1,h2{text-align:center;padding:15px;} 
+         .images{display:flex;justify-content:center;gap:40px;}
+         .images img{width:380px;height:auto;} 
+      </style>
+    </head>
+    <body>
+      <header>
+        <h1>Welcome to My Web Page !</h1>
+        <hr>  <!--displays a horizontal line-->
+      </header>
+      <nav> <!--to able to navigate easily on a webpage-->
+       <ul> <!--unordered list-->
+        <li><a href="#home">Home</a></li>  <!--makes text into a link-->
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+       </ul>
+      </nav>
+      <section id="about"> <!--subsection for about-->
+        <h2><u>About Me</u></h2>
+        <p>Hello, I'm Namratha. I come from the land once where the Nizams have ruled, <strong>Hyderabad</strong><!--changes text to bold-->. Currently I am pursuing my Bachelor of Technology at NIT Jalandar. Few
+             of my hobbies include reading novels,pencil sketching and listening to music. My favourite music artist is <em>Taylor Swift</em> who is currently touring at her legendary
+            Eras Tour. I desire to go to her concerts one day.
+        </p>
+        <p>The pop star has been born on a Decemeber 13,1989. Ever since she was little she was passionate about making music. All she dreams is to produce good music for her fandom
+            popularly known as the <i>Swifties</i><!--changes text to italic-->. Her most recent album was <b>"The Tortured Poets Department"</b> which was released during the Eras tour. She is an American singer-songwriter. 
+            Known for her autobiographical songwriting and artistic reinventions, Swift is an influential figure in popular culture and the subject of widespread public interest.
+        </p>
+      </section>
+      <br> <!--goes to new line-->
+      <section id="gallery"> <!--subsection for gallery-->
+        <h2><u>Photo Gallery</u></h2>
+        <br>
+        <div class="images"> <!--container for images-->
+          <!--displays image/text if image fails to load-->
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlaoLYvSlMoreDdDJf0XRGIB1yAMFsnpiWXA&s" alt="Taylor Swift">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhAZZIjfJ5-CcLA-0wyk7157cLBtg2r0ACcQ&s" alt="Charminar">
+        </div>
+        <br>
+        <table class="writers"> <!--creating a table with 3 rows,2 columns-->
+            <caption style="margin-bottom:10px;"><big>My Favourite Photos</big></caption> <!--heading of table-->
+            <br><br>
+            <thead> <!--headings of columns-->
+              <tr> <!--table row-->
+                <th>Author</th>
+                <th>Famous Work</th>
+              </tr>
+            </thead>
+            <tbody> <!--info of table-->
+             <tr>
+                <td><img src="https://images-na.ssl-images-amazon.com/images/I/61w3pqVMCZL.jpg" alt="A picture of Rick Riordan" height="250" width="190"></td>
+                <td>Percy Jackson and the Olympians series</td>
+             </tr>
+             <tr>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkkez93h_xKocFVjVAmhIqNihHv86f_JGlM-BiAaGI-6e5Iox7MdoD6Ca2OywDz7N742s&usqp=CAU" alt="A picture of J.K.Rowling"></td>
+                <td>Harry Potter</td>
+             </tr>
+            </tbody>
+        </table>
+      </section><br>
+      <section id="contact"> <!--subsection for contact-->
+        <br>
+        <h2><u>Contact Me</u></h2>
+        <form action="#" method="post" class="input"> <!--to collect data from user-->
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="msg" name="msg" rows="4" cols="15" placeholder="Message"></textarea> 
+            <button type="submit">Submit</button> 
+        </form>
+      </section>
+    </body>
+    <!--contains info to webpage related stuff-->
+    <footer>
+        No copyright-<a href="https://www.britannica.com/list/12-novels-considered-the-greatest-book-ever-written" target="_blank">Novels.com</a>
+    </footer>
+</html>
